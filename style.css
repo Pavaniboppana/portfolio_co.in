@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+/* border: 1px solid red; */
+}
+
+
+/* This is Navabar */
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    padding: 10px 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+nav ul li {
+    font-size: large;
+}
+
+nav ul li input {
+    width: 200px;
+    height: 25px;
+    border: 2px;
+    border-radius: 5px;
+    padding: 2px 6px;
+    outline: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: aqua;
+    border-bottom: 2px;
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+nav ul li a:focus {
+    color: green;
+    text-decoration: underline;
+}
+
+nav ul li a i {
+    font-size: 25px;
+    color: white;
+}
+
+.h1 {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+/* This is Profile */
+section {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+section .profile {
+      height: 300px;
+       margin:20px 100px;
+}
+section .profile img{
+    width: 250px;
+    height: 250px;
+
+}
+
+section .info {
+    height: 280px;
+    margin: 20px 100px;
+    line-height: 30px;
+}
+
+section .info .buttons button a {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+section .info .buttons button a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+
+/* This is Education */
+article {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+article .qualification {
+    width: 450px;
+    height: 130px;
+    border: 2px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0px black;
+}
+
+
+
+/* This is Technical and Soft Skills */
+#skills {
+   width:100%;
+   display:flex;
+   justify-content: space-between;
+   padding: 0px 20px;
+}
+
+.tech{
+    width:800px;
+    padding: 20px;
+    padding: relative;
+}
+.tech h1,.soft-skills h1{
+    padding-bottom: 20px;
+}
+.tech img{
+    width: 180px;
+    height: 100px;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.soft-skills{
+width:600px;
+ padding: 20px;
+  text-align: center;
+}
+
+
+
+/* This is Project */
+#project {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 20px 30px;
+    gap: 15px;
+}
+
+#project .pro {
+    width: 330px;
+    height: 390px;
+    border:none;
+        border-radius: 10px;
+    background-color: lightblue;
+    text-align: center;
+    font-size: 18px;
+position: relative;
+overflow: hidden;
+  
+}
+#project .pro:hover .pro-text{
+    opacity: 1;
+}
+#project .pro .image {
+  width: 100%;
+  height:280px;
+}
+#project .pro  p a{
+    text-decoration: none;
+    color:blue;
+}
+#project .pro-text {
+position: absolute;
+  top: 0;
+  height: 72%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+ background-color: midnightblue;
+    padding:20px; 
+    box-sizing: border-box;
+    color: white;
+}
+#project .pro-text p{
+      color: white;
+  font-size: 18px;
+  position: absolute;
+  text-align: justify;
+  padding-right: 20px;
+
+}
+
+
+
+/* This is Services */
+#service {
+    width: 100%;
+    display: flex;  
+    gap: 20px;
+    text-align: center;
+}
+
+#service .service-text {
+    width: 500px;
+    height: 350px;
+    border: 2px;
+    background-color: darkgray;
+    color: white;
+    font-size: large;
+    padding-top: 10px;
+}
+
+#service .service-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+/* Social icons */
+.social {
+    display: flex;
+    justify-content:space-evenly;
+    margin: auto;
+}
+
+.social a i {
+    font-size: 40px;
+    color: black;
+}
+
+.social i:hover {
+    color: lime;
+}
+
+
+/* Social icons */
+.social {
+    width: 40%;
+}
+
+.social i {
+    font-size: 40px;
+    color: black;
+}
+
+.social i:hover {
+    color: lime;
+} */
+
+/* This is Contact Us */
+#contactus {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+#contactus form{
+    width: 600px;
+    height:500px;
+    padding:80px;
+    background-color: whitesmoke;
+}
+#contactus form label {
+    font-size: 20px;
+}
+
+#contactus form input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+}
+
+#contactus form textarea {
+    width: 400px;
+    height: 90px;
+    padding: 10px;
+}
+
+#contactus form button {
+    width: 400px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+
+#contactus hr{
+    width: 2px;
+    height: 400px;
+    background-color: gray;
+    border:none;
+}
+#contactus  .contact-info{
+ width: 600px;
+    height:500px;
+    border: 2px solid gray;
+    text-align: center;
+    color:blue;
+    background-color: white;
+}
+.contact-info p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contact-info i {
+    font-size: 20px;
+}
+
+
+
+/* This is footer */
+footer {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(27, 26, 26);
+    color: aliceblue;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+/* Add media queries for resposnivenedd when the screen */
+/* @media screen(max-width:500px) {
+    color:red;
+} */

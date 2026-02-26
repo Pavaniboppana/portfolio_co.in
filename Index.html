@@ -8,399 +8,276 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-
-        }
-
-        /* This is Navabar */
-        nav {
-            width: 100%;
-            height: 45px;
-            background-color: midnightblue;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 60px;
-        }
-
-        nav ul li {
-            font-size: large;
-        }
-
-        nav ul li input {
-            width: 200px;
-            height: 25px;
-            border: 2px;
-            border-radius: 5px;
-            padding: 2px 6px;
-            outline: none;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a i {
-            font-size: 25px;
-            color: white;
-        }
-
-
-        /* This is Profile */
-        section {
-            width: 100%;
-            height: 350px;
-            display: flex;
-            padding: 40px 60px;
-            background-color: bisque;
-            line-height: 30px;
-        }
-
-        section .profile img {
-            width: 210px;
-            height: 210px;
-            border: 1px;
-            border-radius: 50%;
-
-        }
-
-
-        section .profile,
-        .info {
-            width: 50%;
-            height: 250px;
-            margin: 20px;
-        }
-
-        section .info .social i {
-            font-size: 20px;
-            color: black;
-        }
-
-        section .info .social i:hover {
-            color: lime;
-        }
-
-        section .info .buttons button {
-            width: 120px;
-            height: 30px;
-            background-color: plum;
-        }
-
-
-        /* This is Education */
-        article {
-            width: 100%;
-            height: 200px;
-            display: flex;
-            justify-content: space-evenly;
-            gap: 30px;
-        }
-
-        article .qualification {
-            width: 450px;
-            height: 150px;
-            border: 2px solid rgb(226, 94, 6);
-            border-radius: 10px;
-            background-color: coral;
-            text-align: center;
-            font-size: 20px;
-        }
-
-
-        /* This is Skills */
-        .skills {
-            width: 100%;
-            height: 450px;
-            border: 2px solid gray;
-            margin-top: 50px;
-            background-color: aqua;
-            padding: 30px;
-        }
-
-
-        /* This is Technical and Soft Skills */
-        .skills {
-            width: 100%;
-            height: 900px;
-            border: 2px solid gray;
-            display: inline;
-        }
-
-        .skills .tech,
-        .soft {
-            width: 100%;
-            height: 200px;
-        }
-
-        .skills .tech-skills img,
-        .soft-skills {
-            width: 150px;
-            height: 150px;
-            border: 2px solid gray;
-        }
-
-        .skills,
-        .tech-skills {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        /* This is Project */
-        .project {
-            width: 100%;
-            height: 800px;
-            border: 2px solid gray;
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(3, auto);
-        }
-
-        .project .pro {
-            width: 200px;
-            height: 200px;
-            border: 2px solid red;
-        }
-
-
-        /* This is Contact Us */
-        .contactus {
-            width: 100%;
-            height: 500px;
-            background-color: cornflowerblue;
-            margin-top: 50px;
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-        .contactus form {
-            width: 50%;
-            height: 340px;
-            margin: 20px;
-            line-height: 30px;
-        }
-
-        .contactus form label {
-            font-size: 20px;
-        }
-
-        .contactus form input {
-            width: 350px;
-            height: 40px;
-            padding: 10px;
-        }
-
-        .contactus form textarea {
-            width: 350px;
-            height: 70px;
-            padding: 10px;
-        }
-
-        .contactus .form-img {
-            width: 50%;
-            height: 340px;
-            margin: 20px;
-        }
-
-        .contactus .form-img img {
-            width: 500px;
-            height: 300px;
-        }
-
-        .contactus form button {
-            width: 150px;
-            height: 40px;
-            border: none;
-        }
-
-
-        /* This is footer */
-        footer {
-            width: 100%;
-            height: 40px;
-            text-align: center;
-            background-color: rgb(27, 26, 26);
-            color: aliceblue;
-            line-height: 35px;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- Navigation bar -->
     <nav>
-        <div style="font-size:x-large"><a href="#" style="color: white;">Logo</a></div>
+        <div style="font-size:x-large; font-weight: bold; color:white">Pavaniboppana</div>
         <!-- <img src="" alt="Logo"> -->
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#">Certifications</a></li>
             <li><a href="#contactus">Contact</a></li>
-            <li><a href="#">Download CV</a></li>
         </ul>
     </nav>
 
     <!-- This is home Profiel sextion -->
     <section id="home">
         <div class="profile">
-            <img src="../../468-thumbnail.png" alt="">
+            <img src="./Pic.jpg" alt="">
         </div>
 
         <div class="info">
             <h1>Boppana Pavani</h1>
-            <h1>Software Developer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim illo maxime, debitis exercitationem, qui
-                voluptatibus laborum iste tenetur pariatur sapiente voluptate obcaecati! Voluptas aperiam perferendis
-                beatae at necessitatibus animi nobis!</p>
+            <h2>Software Developer</h2>
+            <p>I am a passionate and dedicated Software Developer with a strong foundation in front-end and back-end
+                technologies. I specialize in building responsive, user-friendly, and efficient web applications using
+                modern development practices.
 
+                With hands-on experience in developing full-stack applications, I focus on writing clean, maintainable
+                code and creating seamless user experiences. I enjoy solving real-world problems, learning new
+                technologies, and continuously improving my technical expertise.
 
-            <!-- Social icons -->
-            <div class="social">
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#"><i class="fa-solid fa-phone"></i></a>
-                <a href="https://www.linkedin.com/in/pavani30/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Pavaniboppana"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+                As a motivated developer, I am eager to contribute to innovative projects, collaborate with teams, and
+                grow professionally while delivering high-quality solutions</p>
+
 
             <!-- This is buttons -->
             <div class="buttons">
-                <button>Hire Me</button>
-                <button>Contact Me</button>
+                <button><a href="#">Download CV</a></button>
             </div>
         </div>
 
     </section>
 
     <!-- This is Education -->
+    <div style="height:280px;">
+        <h1 style="text-align: center;margin: 30px 0px;">Education</h1>
+        <article id="education">
+            <div class="qualification">
+                <h2>B.Tech</h2>
+                <p>Sir C.R.Reddy College of Engineering</p>
+                <p>ECE</p>
+                <p>2023 | Vatluru,Eluru</p>
+            </div>
 
-    <h1 style="text-align:center;padding:40px 0px;">Education</h1>
-    <article id="education">
-        <div class="qualification" >
-            <h2>B.Tech</h2>
-            <p>Sir C.R.Reddy College of Engineering</p>
-            <p>ECE</p>
-            <p>2023 | Vatluru,Eluru</p>
-        </div>
+            <div class="qualification">
+                <h2>Intermediate</h2>
+                <p>Sir C.R.Reddy Junior College For Women</p>
+                <p>M.P.C</p>
+                <p>2019 | Vatluru,Eluru</p>
+            </div>
 
-        <div class="qualification" >
-            <h2>Intermediate</h2>
-            <p>Sir C.R.Reddy Junior College For Women</p>
-            <p>M.P.C</p>
-            <p>2019 | Vatluru,Eluru</p>
-        </div>
+            <div class="qualification">
+                <h2>S.S.C</h2>
+                <p>Sree Bharathi School</p>
+                <p>2017 | Santhi Nagar,Eluru</p>
+            </div>
+        </article>
+    </div>
 
-        <div class="qualification">
-            <h2>S.S.C</h2>
-            <p>Sree Bharathi School</p>
-            <p>2017 | Santhi Nagar,Eluru</p>
-        </div>
+    <div>
+        <!-- Skills -->
+        
+        <div id="skills">
+            <div class="tech">
+<h1 style="text-align: center;margin: 20px 0px;">Skills</h1>
+<div class="tech-img">
+                <h1 style="text-align: center;">Technical Skills</h1>
+                <img src="./html.png" alt="">
+                <img src="./css.png" alt="">
+                <img src="./bootstrap.jpg" alt="">
+                <img src="./tailwindcss.png" alt="">
+                <img src="./js.jpg" alt="">
+                <img src="./react.png" alt="">
+                <img src="./material ui.png" alt="">
+                <img src="./python.png" alt="">
+                <img src="./sql.png" alt="">
+                <img src="./dajngo.png" alt="">
+                <img src="./version.jpg" alt="">
 
+            </div>
 
-    </article>
-    <h1 style="text-align: center;">Skills</h1>
+            <!-- This is Soft skills -->
+            <div class="soft"> 
+                <h1>Soft Skills</h1>
+                <div class="soft-skills">
 
-    <h2 style="text-align: center;">Techincal Skills</h2>
-    <div class="skills" id="skills">
-        <div class="tech">
-            <img src="./html.png" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./css.png" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./tailwindcss.png" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./bootstrap.jpg" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./js.jpg" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./react.png" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./python.png" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./sql.png" alt="">
-        </div>
-        <div class="tech-skills">
-            <img src="./dajngo.png" alt="">
-        </div>
+                    <p>Communication Skills</p>
+                    <p>Problem-Solving</p>
+                    <p>Time Management</p>
+                    <p>Critical Thinking</p>
 
-    
-        <!-- This is Soft skills -->
-        <h1 style="margin-top: 80px;">Soft Skills</h1>
-        <div class="soft">
-     <p>Hard Working</p>
-                <p>Punctuality</p>
-                <p>Smart Work</p>
+                    <p>Leadership</p>
+                    <p>Teamwork</p>
+                    <p>Adaptability</p>
+                    <p>collaboration</p>
+                    <p>Hard Working</p>
+                    <p>Punctuality</p>
+
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- This is Project -->
-    <h1 style="text-align: center;">This is Project</h1>
-    <div class="project" id="project">
+    <h1 class="h1">This is Project</h1>
+    <div id="project">
         <div class="pro">
-            <h1>This is Project1</h1>
+            <img src="./Spotify.jpg" alt="" class="image">
+            <h2>Spotify Website</h2>
+            <p>HTML,CSS,Bootstrap<br> <a href="https://github.com/Pavaniboppana/Spotify_Clone">View on Github</a></p>
+            <div class="pro-text">
+            <p>This project is a Spotify website developed using HTML, CSS, and Bootstrap. Its features of layout with a
+                Bootstrap navbar including the Spotify logo and navigation links. The page includes structured image and
+                content sections, a Bootstrap accordion for FAQs, and a centered call-to-action button. The footer is
+                well-organized with the Spotify logo, descriptive content, useful links, and social media icons with
+                hover effects. The design focuses on clean UI, responsiveness, and user-friendly experience.</p>
+        </div>
         </div>
 
         <div class="pro">
-            <h1>This is Project2</h1>
+            <img src="./icream.jpg" alt="" class="image">
+            <h2>Ice Cream Website</h2>
+              <p>HTML,CSS<br> <a href="https://github.com/Pavaniboppana/Ice-cream">View on Github</a></p>
+            <div class="pro-text">
+            <p>This Ice Cream website is designed using HTML and CSS with a clean and user-friendly interface. The
+                navbar features a logo on the left side along with navigation links that smoothly scroll to their
+                respective sections when clicked.
+
+                The homepage includes a visually appealing banner section with a background image, heading, and
+                descriptive paragraph. Another section showcases various ice cream varieties arranged using CSS Grid
+                with multiple structured div elements. The website also highlights delivery partners.
+                Additionally,Contact Us form is provided for user interaction,footer section displaying copyright
+                information.</p>
+                </div>
         </div>
         <div class="pro">
-            <h1>This is Project3</h1>
+            <img src="./agency.jpg" alt="" class="image">
+            <h2>Agency Website</h2>
+               <p>HTML,CSS,Bootsrap <br><a href="https://github.com/Pavaniboppana/Agency">View on Github</a></p>
+              <div class="pro-text">
+            <p>This Agency website is built using HTML, CSS, and Bootstrap with a clean and structured design. It
+                features a navbar with a left-aligned logo and spaced navigation links, followed by a Bootstrap carousel
+                with images, headings, text, and buttons. A services section displays multiple cards split into image
+                and content areas with hover effects. The site also includes a styled highlight section and a footer
+                organized into multiple columns with useful links and social media icons.</p>
+        </div>
         </div>
 
         <div class="pro">
-            <h1>This is Project4</h1>
+            <img src="../img.jpg" alt="" class="image">
+            <h2>Portfolio Website</h2>
+               <p>HTML,CSS <br><a href="https://github.com/Pavaniboppana/CodeAlpha_Portfolio">View on Github</a></p>
+             <div class="pro-text">
+            <p>This Portfolio website is developed using HTML and CSS with a clean and structured design. The navigation
+                bar includes sections such as Home, About, Skills, Education, Certifications, Projects, Resume, and
+                Contact. Each navigation link redirects to a separate page, allowing clear and organized content
+                presentation.
+
+                Every page is designed with proper layout structure, headings, and styling to maintain consistency
+                throughout the website. The project demonstrates multi-page navigation, structured content organization,
+                and effective use of HTML and CSS for building a professional personal portfolio.</p>
+        </div>
         </div>
         <div class="pro">
-            <h1>This is Project5</h1>
+            <img src="./ibomma.png" alt="" class="image">
+            <h2>Ibomma Website</h2>
+             <p>HTML,CSS,JavaScript,React,React-Bootstrap<br> <a href="https://github.com/Pavaniboppana/ibomma">View on Github</a></p>
+                  <div class="pro-text">
+            <p>This iBomma-inspired movie website is developed using HTML, CSS, JavaScript, React, Bootstrap, and React-Bootstrap. The application dynamically renders movie data using JSON for efficient content display.
+
+The navigation bar includes a logo, links, and a search input for easy navigation. The homepage displays movie cards with images, titles, and release years. Clicking on a movie redirects users to a detailed view page using routing functionality.
+
+The project highlights dynamic data rendering, routing, and structured layout management, with fixed navbar and footer for a consistent user experience.</p>
+        </div>
         </div>
 
         <div class="pro">
-            <h1>This is Project6</h1>
+            <img src="./boat.png" alt="" class="image">
+            <h2>Boat Website</h2>
+            <p>HTML,CSS,JavaScript,React,React-Bootstrap<br> <a href="https://github.com/Pavaniboppana/boat-Website">View on Github</a></p>
+                 <div class="pro-text">
+            <p>This boAt-inspired e-commerce website is developed using HTML, CSS, JavaScript, Bootstrap, and React with a clean and modern design. It features a clickable logo that redirects to the homepage and a responsive navigation bar with search and dropdown product categories.
+
+Products are displayed using structured card layouts with clear headings and pricing details. CSS transition and transform properties are used to create smooth hover effects like card scaling and image zoom to enhance user interaction.
+
+The footer is neatly organized with useful links, company details, and social media icons, ensuring a professional and responsive layout.</p>
+        </div>
         </div>
     </div>
 
+
+    <!-- This is Services -->
+    <h1 class="h1">Services</h1>
+    <div id="service">
+        <div class="service-text">
+            <div class="service-img">
+                <img src="https://themes.3rdwavemedia.com/instance/bs5/assets/images/frontend-icon.svg" alt="">
+            </div>
+            <h1>Frontend Developer</h1>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Bootstrap</p>
+            <p>TailwindCSS</p>
+            <p>Javacript</p>
+            <p>React</p>
+            <p>Rect-Bootstrap</p>
+            <p>Material UI</p>
+        </div>
+        <div class="service-text">
+            <div class="service-img">
+                <img src="	https://themes.3rdwavemedia.com/instance/bs5/assets/images/backend-icon.svg" alt="">
+            </div>
+            <h1>Backend Developer</h1>
+            <p>Python</p>
+            <p>MySQL
+            <p>
+            <p>Django</p>
+        </div>
+    </div>
+
+
+    <!-- Social icons -->
+    <h1 class="h1">Get In Touch</h1>
+    <div class="social">
+        <a href="pavaniboppana123@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="9515936841"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://www.linkedin.com/in/pavani30/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Pavaniboppana"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
 
     <!-- This is Contact US -->
-    <h1 style="text-align: center;">Contact US or Contact Me</h1>
-    <div class="contactus" id="contactus">
-        <form action="">
-            <label for="">Name</label><br>
-            <input type="text" placeholder="Enter the Name"><br>
-            <label for="">Enter the Email</label><br>
-            <input type="email" placeholder="Enter the Email"><br>
-            <label for="">Mobile Number</label><br>
-            <input type="tel" name="" id="" placeholder="Enter the Mobile Number"><br>
-            <label for="">Subject</label><br>
-            <input type="text" placeholder="Enter the Subject"><br>
-            <label for="">Enquiry</label><br>
-            <textarea name="" id="" placeholder="Your Message..."></textarea><br>
-            <button>Send Message</button>
-        </form>
-        <div class="form-img">
-            <img src="https://thumbs.dreamstime.com/b/boy-character-pointing-left-right-hand-gestures-flat-style-clear-clean-vector-illustration-ideal-directional-signs-437057865.jpg"
-                alt="">
+
+    <h1 class="h1">Contact</h1>
+    <div id="contactus">
+     <form action="">
+            <input type="text" placeholder="Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+             <input type="tel" placeholder="Mobile Number"><br><br>
+            <textarea name="" id="" placeholder="Your Message..."></textarea><br><br>
+            <button>Submit</button>
+        </form> 
         </div>
+        <hr>
+        <div class="contact-info">
+                <h1 style="color: black;">Let's Connect</h1>
+                <p><i class="fa-solid fa-phone"></i>+91-9515936841</p>
+                <p><i class="fa-solid fa-location-dot"></i>Plot No:20,Hitech Tower,Opposite to Shilparamam,Hitech City,Hyderabad,500084</p>                
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d238.45697821948946!2d81.20515313372954!3d17.008376600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1772008208036!5m2!1sen!2sin" width="450" height="250" style="border:0;margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </div>
+
+
 
     <!-- This is Footer -->
     <footer>&copyPavaniboppana Portfolio website @2026</footer>
